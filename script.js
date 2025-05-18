@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
     footer: document.querySelector("footer p")
   };
 
-  // Update language
+  // Mettre à jour le contenu de la page en fonction de la langue sélectionnée
   function updateLang(lang) {
     const t = translations[lang];
     elements.title.textContent = t.title;
@@ -95,25 +95,4 @@ document.addEventListener("DOMContentLoaded", () => {
     elements.aboutText.textContent = t.aboutText;
     elements.servicesTitle.textContent = t.servicesTitle;
     elements.servicesList.innerHTML = t.services.map(item => `<li>${item}</li>`).join("");
-    elements.doctorTitle.textContent = t.doctorTitle;
-    elements.doctorText.textContent = t.doctorText;
-    elements.contactTitle.textContent = t.contactTitle;
-    elements.form.name.textContent = t.formLabels.name;
-    elements.form.email.textContent = t.formLabels.email;
-    elements.form.message.textContent = t.formLabels.message;
-    elements.form.button.textContent = t.formLabels.button;
-    elements.contactInfo.address.innerHTML = `<strong>${t.addressLabel} :</strong> 32 Boulevard Hammou Boutlelis, Oran, Algérie`;
-    elements.contactInfo.phone.innerHTML = `<strong>${t.phoneLabel} :</strong> <a href="tel:+213661598132">0661 59 81 32</a>`;
-    elements.contactInfo.email.innerHTML = `<strong>${t.emailLabel} :</strong> <a href="mailto:cherif.benameur@gmail.com">cherif.benameur@gmail.com</a>`;
-    elements.footer.textContent = `© 2025 ${t.footer}`;
-    document.body.dir = lang === "ar" ? "rtl" : "ltr";
-  }
-
-  // Language switch event listener
-  document.getElementById("language-switcher").addEventListener("change", (e) => {
-    updateLang(e.target.value);
-  });
-
-  // Initialize the language
-  updateLang("fr"); // Default language is French
-});
+    elements
