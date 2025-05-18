@@ -33,7 +33,7 @@ a:hover {
 
 /* Header */
 header {
-  background: linear-gradient(45deg, #2c3e50, #34495e);
+  background: linear-gradient(135deg, #2c3e50, #2980b9);
   color: white;
   padding: 20px 0;
   border-radius: 10px;
@@ -84,4 +84,67 @@ nav select {
 }
 
 .section.gray {
-  background-color: #
+  background-color: #ecf0f1;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.services-list {
+  list-style: none;
+  padding: 0;
+}
+
+.services-list li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.testimonial {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+  font-style: italic;
+}
+
+.testimonial em {
+  display: block;
+  text-align: right;
+  margin-top: 10px;
+  color: #2980b9;
+}
+
+/* Form */
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #2980b9;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
