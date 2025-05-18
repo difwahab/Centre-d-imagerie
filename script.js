@@ -114,14 +114,6 @@ document.addEventListener("DOMContentLoaded", () => {
     updateLang(e.target.value);
   });
 
-  // Hamburger menu toggle
-  const menuToggle = document.getElementById("menu-toggle");
-  const menu = document.getElementById("menu");
-
-  menuToggle.addEventListener("click", () => {
-    menu.classList.toggle("active");
-  });
-
   // Initialize the language
   updateLang("fr"); // Default language is French
 });
