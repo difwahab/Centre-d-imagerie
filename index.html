@@ -1,61 +1,74 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Centre d'Imagerie Benameur</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centre D'Imagerie Benameur</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <select id="language-switcher">
-      <option value="fr">Français</option>
-      <option value="ar">العربية</option>
-    </select>
-    <h1 id="title">Centre d'Imagerie Benameur</h1>
-    <p id="subtitle">Radiologie et imagerie médicale à Oran</p>
-  </header>
 
-  <nav>
-    <a href="#services" id="nav-services">Services</a>
-    <a href="#team" id="nav-team">Équipe</a>
-    <a href="#contact" id="nav-contact">Contact</a>
-    <a href="#location" id="nav-location">Localisation</a>
-  </nav>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Centre D'Imagerie Benameur">
+        </div>
+        <h1>Bienvenue au Centre D’Imagerie Benameur</h1>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#rendezvous">Prendre rendez-vous</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section id="services">
-    <h2 id="services-title">Nos Services</h2>
-    <p>IRM, Scanner, échographie, radiologie conventionnelle et imagerie interventionnelle.</p>
-  </section>
+    <section id="accueil">
+        <h2>Excellence en imagerie médicale à Oran</h2>
+        <p>Prenez soin de votre santé avec des diagnostics fiables et rapides.</p>
+        <a href="#rendezvous" class="btn">Prendre rendez-vous</a>
+    </section>
 
-  <section id="team">
-    <h2 id="team-title">Notre Équipe</h2>
-    <p>Le Dr. Cherif Benameur et son équipe de radiologues spécialisés au service de votre santé.</p>
-  </section>
+    <section id="apropos">
+        <h2>À propos</h2>
+        <p>Notre centre est équipé des technologies les plus avancées pour garantir des diagnostics précis et rapides.</p>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <form id="contact-form">
-      <label for="name">Nom</label>
-      <input type="text" id="name" name="name" required>
-      
-      <label for="message">Message</label>
-      <textarea id="message" name="message" required></textarea>
-      
-      <button type="submit">Envoyer</button>
-    </form>
-  </section>
+    <section id="services">
+        <h2>Nos Services</h2>
+        <ul>
+            <li>🩻 Radiologie générale</li>
+            <li>🧲 IRM</li>
+            <li>🖥️ Scanner</li>
+            <li>🔍 Échographie</li>
+        </ul>
+    </section>
 
-  <section id="location">
-    <h2>Localisation</h2>
-    <div id="map"></div>
-  </section>
+    <section id="rendezvous">
+        <h2>Prendre rendez-vous</h2>
+        <p>Appelez-nous au <strong>0661 598 132</strong> ou remplissez le formulaire ci-dessous :</p>
+        <form action="mailto:cherif.benameur@gmail.com" method="post" enctype="text/plain">
+            <label>Nom :</label>
+            <input type="text" name="nom" required>
+            <label>Email :</label>
+            <input type="email" name="email" required>
+            <label>Message :</label>
+            <textarea name="message"></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
 
-  <footer>
-    <p>© 2025 Centre d'Imagerie Benameur - Tous droits réservés</p>
-  </footer>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p><strong>Adresse :</strong> 32 Boulevard Hammou Boutlelis, Oran, Algérie</p>
+        <p><strong>Téléphone :</strong> 0661 598 132</p>
+        <p><strong>Email :</strong> <a href="mailto:cherif.benameur@gmail.com">cherif.benameur@gmail.com</a></p>
+    </section>
 
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script src="script.js"></script>
+    <footer>
+        <p>© 2025 Centre D’Imagerie Benameur - Tous droits réservés.</p>
+    </footer>
+
 </body>
 </html>
