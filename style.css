@@ -1,108 +1,150 @@
-/* Améliorer la visibilité du titre */
-#title {
-  color: white; /* Choisir une couleur de texte qui contraste bien avec l'arrière-plan */
-  font-size: 2.5rem; /* Ajuster la taille de la police */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Ombre légère pour améliorer la lisibilité */
-  font-weight: bold;
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Ajout d'un fond dégradé derrière le titre */
 header {
-  background: linear-gradient(to right, #6a11cb, #2575fc); /* Un dégradé de violet à bleu */
-  padding: 50px 20px;
-  text-align: center;
-  position: relative;
+    background: url('header-bg.jpg') no-repeat center center/cover;
+    padding: 50px 0;
+    text-align: center;
+    color: white;
 }
 
-/* En-tête du menu responsive */
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+select#language-switcher {
+    margin-top: 10px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Navigation Menu */
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    background-color: #333;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-  font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.1rem;
 }
 
 nav a:hover {
-  text-decoration: underline;
+    background-color: #444;
+    border-radius: 4px;
 }
 
-/* Style pour le selecteur de langue */
-#language-switcher {
-  background-color: transparent;
-  color: white;
-  border: 1px solid white;
-  padding: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-/* Menu Hamburger */
 #menu-toggle {
-  display: none; /* Masquer le bouton hamburger sur les grands écrans */
-  background-color: transparent;
-  border: none;
-  font-size: 2rem;
-  color: white;
-  cursor: pointer;
+    display: none;
+    font-size: 2rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
-#menu-toggle:focus {
-  outline: none;
-}
-
-/* Affichage du menu hamburger et style pour les petits écrans */
+/* Responsive Menu */
 @media (max-width: 768px) {
-  #menu-toggle {
-    display: block; /* Afficher le bouton hamburger sur mobile */
-  }
+    #menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
 
-  nav ul {
-    display: none; /* Masquer le menu par défaut sur mobile */
-    flex-direction: column; /* Aligner les éléments du menu verticalement */
-    width: 100%;
-    background-color: #333; /* Couleur du fond du menu */
+    #menu-toggle {
+        display: block;
+    }
+
+    #menu.active {
+        display: flex;
+    }
+
+    nav a {
+        padding: 15px;
+    }
+}
+
+/* Main Content */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+ul {
+    list-style: none;
     padding: 0;
-    margin: 0;
-  }
+}
 
-  nav ul.active {
-    display: flex; /* Afficher le menu lorsque l'on clique sur le hamburger */
-  }
+ul li {
+    font-size: 1.2rem;
+}
 
-  #menu li {
-    padding: 15px;
-    border-bottom: 1px solid #444;
+/* Contact Form */
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #4cae4c;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
     text-align: center;
-  }
-
-  #menu li:last-child {
-    border-bottom: none;
-  }
 }
-
-/* Style pour le menu classique (grand écran) */
-#menu {
-  display: flex; /* Afficher le menu horizontalement sur grand écran */
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-#menu li {
-  margin-right: 20px;
-}
-
-#menu a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.1rem;
-}
-
-#menu a:hover {
-  text
