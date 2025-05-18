@@ -86,6 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
     footer: document.querySelector("footer p")
   };
 
+  // Update language
   function updateLang(lang) {
     const t = translations[lang];
     elements.title.textContent = t.title;
@@ -108,9 +109,19 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.dir = lang === "ar" ? "rtl" : "ltr";
   }
 
+  // Language switch event listener
   document.getElementById("language-switcher").addEventListener("change", (e) => {
     updateLang(e.target.value);
   });
 
-  updateLang("fr"); // Default
+  // Hamburger menu toggle
+  const menuToggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("menu");
+
+  menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
+
+  // Initialize the language
+  updateLang("fr"); // Default language is French
 });
