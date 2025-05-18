@@ -1,15 +1,14 @@
 /* Améliorer la visibilité du titre */
 #title {
-  color: white;
-  font-size: 2.5rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  color: white; /* Choisir une couleur de texte qui contraste bien avec l'arrière-plan */
+  font-size: 2.5rem; /* Ajuster la taille de la police */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Ombre légère pour améliorer la lisibilité */
   font-weight: bold;
 }
 
-/* Ajout d'un fond semi-transparent derrière le titre */
+/* Ajout d'un fond dégradé derrière le titre */
 header {
-  background-image: url('path/to/your-image.jpg'); /* Remplacez par l'URL de votre image */
-  background-size: cover;
+  background: linear-gradient(to right, #6a11cb, #2575fc); /* Un dégradé de violet à bleu */
   padding: 50px 20px;
   text-align: center;
   position: relative;
@@ -45,7 +44,7 @@ nav a:hover {
 
 /* Menu Hamburger */
 #menu-toggle {
-  display: none;
+  display: none; /* Masquer le bouton hamburger sur les grands écrans */
   background-color: transparent;
   border: none;
   font-size: 2rem;
@@ -60,20 +59,20 @@ nav a:hover {
 /* Affichage du menu hamburger et style pour les petits écrans */
 @media (max-width: 768px) {
   #menu-toggle {
-    display: block;
+    display: block; /* Afficher le bouton hamburger sur mobile */
   }
 
   nav ul {
-    display: none;
-    flex-direction: column;
+    display: none; /* Masquer le menu par défaut sur mobile */
+    flex-direction: column; /* Aligner les éléments du menu verticalement */
     width: 100%;
-    background-color: #333;
+    background-color: #333; /* Couleur du fond du menu */
     padding: 0;
     margin: 0;
   }
 
   nav ul.active {
-    display: flex;
+    display: flex; /* Afficher le menu lorsque l'on clique sur le hamburger */
   }
 
   #menu li {
@@ -89,7 +88,7 @@ nav a:hover {
 
 /* Style pour le menu classique (grand écran) */
 #menu {
-  display: flex;
+  display: flex; /* Afficher le menu horizontalement sur grand écran */
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -106,27 +105,4 @@ nav a:hover {
 }
 
 #menu a:hover {
-  text-decoration: underline;
-}
-
-@media (min-width: 768px) {
-  #menu-toggle {
-    display: none;
-  }
-
-  #menu {
-    display: flex;
-  }
-}
-
-/* Style pour les sections */
-.section {
-  padding: 60px 20px;
-}
-
-.gray {
-  background-color: #f4f4f4;
-}
-
-.services-list {
-  list-style-type: none;
+  text
