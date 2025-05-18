@@ -10,22 +10,25 @@
     <meta name="keywords" content="radiologie, imagerie médicale, scanner, IRM, Oran, Algérie, centre médical">
     <meta name="author" content="Centre D'Imagerie Benameur">
     <meta name="robots" content="index, follow">
+
+    <!-- Chargement rapide du CSS -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="stylesheet" href="style.css">
 </head>
-    <body>
+<body>
 
     <header>
-    
         <h1>Centre D’Imagerie Benameur</h1>
         <nav>
             <ul class="menu">
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#apropos">À propos</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#rendezvous">Prendre rendez-vous</a></li>
-                <li><a href="#temoignages">Témoignages</a></li>
-                <li><a href="#equipe">Équipe</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#accueil" aria-label="Accueil">Accueil</a></li>
+                <li><a href="#apropos" aria-label="À propos">À propos</a></li>
+                <li><a href="#services" aria-label="Nos services">Services</a></li>
+                <li><a href="#rendezvous" aria-label="Prendre rendez-vous">Prendre rendez-vous</a></li>
+                <li><a href="#temoignages" aria-label="Témoignages">Témoignages</a></li>
+                <li><a href="#equipe" aria-label="Équipe">Équipe</a></li>
+                <li><a href="#faq" aria-label="FAQ">FAQ</a></li>
+                <li><a href="#contact" aria-label="Contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -33,7 +36,7 @@
     <section id="accueil">
         <h2 class="fadeIn">Excellence en imagerie médicale à Oran</h2>
         <p>Prenez soin de votre santé avec des diagnostics fiables et rapides.</p>
-        <a href="#rendezvous" class="btn">Prendre rendez-vous</a>
+        <a href="#rendezvous" class="btn">📅 Prendre rendez-vous</a>
     </section>
 
     <section id="services">
@@ -44,7 +47,15 @@
             <li>🖥️ Scanner</li>
             <li>🔍 Échographie</li>
         </ul>
- 
+    </section>
+
+    <section id="equipe">
+        <h2>Notre équipe</h2>
+        <div class="medecin">
+            <img src="images/dr-benameur.jpg" alt="Photo du Dr Benameur, radiologue à Oran">
+            <p><strong>Dr. Benameur</strong> - Radiologue expert</p>
+        </div>
+    </section>
 
     <section id="rendezvous">
         <h2>Prendre rendez-vous</h2>
@@ -55,7 +66,7 @@
             <input type="email" name="email" required>
             <label>Message :</label>
             <textarea name="message"></textarea>
-            <button type="submit">Envoyer</button>
+            <button type="submit">📩 Envoyer</button>
         </form>
     </section>
 
@@ -85,5 +96,16 @@
         <p>© 2025 Centre D’Imagerie Benameur - Tous droits réservés.</p>
     </footer>
 
+    <!-- Script d'animation d'apparition -->
+    <script>
+    window.addEventListener('scroll', function() {
+        document.querySelectorAll('section').forEach((sec) => {
+            if (sec.getBoundingClientRect().top < window.innerHeight) {
+                sec.classList.add('appear');
+            }
+        });
+    });
+    </script>
+
 </body>
-</html>
+</html> 
