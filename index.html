@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
-<header>
-    <div class="logo">
-        <img src="images/logo.png" alt="Centre D'Imagerie Benameur">
-    </div>
-    <h1>Centre D’Imagerie Benameur</h1>
-</header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centre D'Imagerie Benameur</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
     <header>
         <div class="logo">
-            <img src="logo.png" alt="Centre D'Imagerie Benameur">
+            <img src="images/logo.png" alt="Centre D'Imagerie Benameur">
         </div>
-        <h1>Bienvenue au Centre D’Imagerie Benameur</h1>
+        <h1>Centre D’Imagerie Benameur</h1>
         <nav>
             <ul class="menu">
                 <li><a href="#accueil">Accueil</a></li>
@@ -20,13 +20,15 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#rendezvous">Prendre rendez-vous</a></li>
                 <li><a href="#temoignages">Témoignages</a></li>
+                <li><a href="#equipe">Équipe</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="accueil">
-        <h2>Excellence en imagerie médicale à Oran</h2>
+        <h2 class="fadeIn">Excellence en imagerie médicale à Oran</h2>
         <p>Prenez soin de votre santé avec des diagnostics fiables et rapides.</p>
         <a href="#rendezvous" class="btn">Prendre rendez-vous</a>
     </section>
@@ -41,35 +43,49 @@
         </ul>
     </section>
 
+    <section id="equipe">
+        <h2>Notre équipe</h2>
+        <div class="medecin">
+            <img src="images/dr-benameur.jpg" alt="Dr Benameur">
+            <p><strong>Dr. Benameur</strong> - Radiologue expert</p>
+        </div>
+    </section>
+
     <section id="rendezvous">
         <h2>Prendre rendez-vous</h2>
-        <p>Appelez-nous au <strong>0661 598 132</strong> ou remplissez le formulaire ci-dessous :</p>
         <form action="mailto:cherif.benameur@gmail.com" method="post" enctype="text/plain">
             <label>Nom :</label>
             <input type="text" name="nom" required>
             <label>Email :</label>
             <input type="email" name="email" required>
+            <label>Date du rendez-vous :</label>
+            <input type="date" name="date">
             <label>Message :</label>
             <textarea name="message"></textarea>
             <button type="submit">Envoyer</button>
         </form>
     </section>
 
-    <section id="temoignages">
-        <h2>Témoignages</h2>
-        <blockquote>"Un excellent centre avec des équipements de pointe. Service rapide et professionnel !" — **M. Ahmed**</blockquote>
-        <blockquote>"Je suis très satisfait du diagnostic précis et de l'accueil chaleureux." — **Mme Lila**</blockquote>
-    <section id="map">
-    <h2>Notre emplacement</h2>
-    <p><a href="https://www.google.com/maps/place/32+Boulevard+Hammou+Boutlelis,+Oran,+Algérie" target="_blank">
-       📍 Voir notre emplacement sur Google Maps</a></p>
-</section>
+    <section id="faq">
+        <h2>FAQ</h2>
+        <details>
+            <summary>Quels types d'examens proposez-vous ?</summary>
+            <p>Nous réalisons des IRM, scanners, radiographies et échographies.</p>
+        </details>
+        <details>
+            <summary>Comment prendre rendez-vous ?</summary>
+            <p>Vous pouvez nous appeler ou utiliser le formulaire de réservation en ligne.</p>
+        </details>
+    </section>
+
     <section id="contact">
         <h2>Contact</h2>
         <p><strong>Adresse :</strong> 32 Boulevard Hammou Boutlelis, Oran, Algérie</p>
         <p><strong>Téléphone :</strong> 0661 598 132</p>
         <p><strong>Email :</strong> <a href="mailto:cherif.benameur@gmail.com">cherif.benameur@gmail.com</a></p>
-        
+        <p><a href="https://www.google.com/maps/place/32+Boulevard+Hammou+Boutlelis,+Oran,+Algérie" target="_blank">
+            📍 Voir notre emplacement sur Google Maps
+        </a></p>
     </section>
 
     <footer>
