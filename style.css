@@ -1,150 +1,99 @@
-/* Global Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Améliorer la visibilité du titre */
+#title {
+  color: white; /* Choisir une couleur de texte qui contraste bien avec l'arrière-plan */
+  font-size: 2.5rem; /* Ajuster la taille de la police */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Ombre légère pour améliorer la lisibilité */
+  font-weight: bold;
 }
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f8f9fa;
-  color: #333;
-  line-height: 1.6;
-}
-
-h1, h2 {
-  color: #2c3e50;
-}
-
-a {
-  color: #2980b9;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Header */
+/* Ajout d'un fond semi-transparent derrière le titre */
 header {
-  background: linear-gradient(135deg, #2c3e50, #2980b9);
-  color: white;
-  padding: 20px 0;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-header #title {
-  font-size: 2.5rem;
+  background-image: url('path/to/your-image.jpg'); /* Remplacez par l'URL de votre image */
+  background-size: cover;
+  padding: 50px 20px;
   text-align: center;
+  position: relative;
 }
 
-header #subtitle {
-  font-size: 1.2rem;
-  text-align: center;
-  margin-top: 5px;
-}
-
+/* En-tête du menu responsive */
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
 }
 
 nav a {
   color: white;
-  font-size: 1.2rem;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.1rem;
 }
 
 nav a:hover {
-  color: #ecf0f1;
+  text-decoration: underline;
 }
 
-nav select {
-  padding: 8px;
-  font-size: 1rem;
-  background-color: #2980b9;
-  color: #ecf0f1;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-/* Sections */
-.section {
-  padding: 60px 0;
-  text-align: center;
-}
-
-.section.gray {
-  background-color: #ecf0f1;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.services-list {
-  list-style: none;
-  padding: 0;
-}
-
-.services-list li {
-  font-size: 1.2rem;
-  margin: 10px 0;
-}
-
-.testimonial {
-  background-color: #fff;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.testimonial p {
-  font-style: italic;
-}
-
-.testimonial em {
-  display: block;
-  text-align: right;
-  margin-top: 10px;
-  color: #2980b9;
-}
-
-/* Form */
-form {
-  background-color: white;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-form label {
-  display: block;
-  margin: 10px 0 5px;
-}
-
-form input, form textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-form button {
-  background-color: #2980b9;
+/* Style pour le selecteur de langue */
+#language-switcher {
+  background-color: transparent;
   color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
+  border: 1px solid white;
+  padding: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Responsive Design: Mobile View */
+@media (max-width: 768px) {
+  header {
+    padding: 30px 10px;
+  }
+
+  #title {
+    font-size: 2rem; /* Réduire la taille du titre pour les écrans mobiles */
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+
+  #language-switcher {
+    margin-top: 10px;
+  }
+
+  /* Menu hamburger (optionnel) */
+  #menu-toggle {
+    display: block;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  #menu-toggle:focus {
+    outline: none;
+  }
+}
+
+/* Style pour le menu hamburger (si vous choisissez de l'ajouter) */
+@media (max-width: 768px) {
+  nav ul {
+    display: none; /* Masquer le menu sur mobile par défaut */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul.active {
+    display: flex; /* Afficher le menu lorsqu'il est actif */
+  }
+
+  nav a {
+    padding: 10px;
+  }
+}
