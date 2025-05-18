@@ -1,8 +1,8 @@
 /* Améliorer la visibilité du titre */
 #title {
-  color: white; /* Choisir une couleur de texte qui contraste bien avec l'arrière-plan */
-  font-size: 2.5rem; /* Ajuster la taille de la police */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Ombre légère pour améliorer la lisibilité */
+  color: white;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   font-weight: bold;
 }
 
@@ -45,7 +45,7 @@ nav a:hover {
 
 /* Menu Hamburger */
 #menu-toggle {
-  display: none; /* Masquer le bouton hamburger sur les grands écrans */
+  display: none;
   background-color: transparent;
   border: none;
   font-size: 2rem;
@@ -60,20 +60,20 @@ nav a:hover {
 /* Affichage du menu hamburger et style pour les petits écrans */
 @media (max-width: 768px) {
   #menu-toggle {
-    display: block; /* Afficher le bouton hamburger sur mobile */
+    display: block;
   }
 
   nav ul {
-    display: none; /* Masquer le menu par défaut sur mobile */
-    flex-direction: column; /* Aligner les éléments du menu verticalement */
+    display: none;
+    flex-direction: column;
     width: 100%;
-    background-color: #333; /* Couleur du fond du menu */
+    background-color: #333;
     padding: 0;
     margin: 0;
   }
 
   nav ul.active {
-    display: flex; /* Afficher le menu lorsque l'on clique sur le hamburger */
+    display: flex;
   }
 
   #menu li {
@@ -89,7 +89,7 @@ nav a:hover {
 
 /* Style pour le menu classique (grand écran) */
 #menu {
-  display: flex; /* Afficher le menu horizontalement sur grand écran */
+  display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -109,13 +109,24 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Cacher le menu hamburger sur les grands écrans */
 @media (min-width: 768px) {
   #menu-toggle {
-    display: none; /* Cache le bouton hamburger sur les grands écrans */
+    display: none;
   }
 
   #menu {
-    display: flex; /* Affiche le menu horizontalement */
+    display: flex;
   }
 }
+
+/* Style pour les sections */
+.section {
+  padding: 60px 20px;
+}
+
+.gray {
+  background-color: #f4f4f4;
+}
+
+.services-list {
+  list-style-type: none;
