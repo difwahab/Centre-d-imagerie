@@ -1,80 +1,60 @@
-/* Menu en haut */
-#menu {
-  display: none;
-  list-style-type: none;
-  background-color: #333;
-  padding: 10px 0;
-  text-align: center;
+:root {
+  --primary: #005baa;
+  --secondary: #0079c1;
+  --bg: #f0f4f8;
+  --text: #333;
 }
 
-#menu li {
-  display: inline-block;
-  margin: 0 15px;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
 }
 
-#menu li a {
+header {
+  background: var(--primary);
   color: white;
-  text-decoration: none;
-  font-size: 16px;
+  text-align: center;
+  padding: 20px;
 }
 
-#menu-toggle {
-  font-size: 30px;
-  cursor: pointer;
-  color: #333;
-  display: block;
+nav {
+  background: var(--secondary);
+  display: flex;
+  justify-content: center;
   padding: 10px;
-  background-color: #f1f1f1;
 }
 
-#menu-toggle.active + #menu {
-  display: block;
-}
-
-/* Menu fixe en bas */
-#bottom-menu {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: #333;
-  padding: 10px 0;
-  text-align: center;
-  z-index: 100;
-}
-
-#bottom-menu ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-#bottom-menu li {
-  display: inline-block;
-  margin: 0 15px;
-}
-
-#bottom-menu li a {
+nav a {
   color: white;
+  margin: 0 15px;
   text-decoration: none;
-  font-size: 16px;
+  font-weight: bold;
 }
 
-/* Responsivité du menu hamburger */
-@media (max-width: 768px) {
-  #menu-toggle {
-    display: block;
-  }
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
 
-  #menu {
-    display: none;
-    background-color: #333;
-  }
+h2 {
+  color: var(--primary);
+}
 
-  #menu li {
-    display: block;
-    margin: 10px 0;
-  }
+#map {
+  height: 300px;
+  background: #ddd;
+  border-radius: 8px;
+}
 
-  #bottom-menu {
-    display: none;
-  }
+footer {
+  background: #ccc;
+  text-align: center;
+  padding: 10px;
+  color: var(--text);
 }
