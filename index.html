@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -19,6 +18,9 @@
         <a href="#about">À propos</a>
         <a href="#services">Services</a>
         <a href="#doctor">Dr. Benameur</a>
+        <a href="#testimonials">Témoignages</a>
+        <a href="#faq">FAQ</a>
+        <a href="#blog">Blog</a>
         <a href="#contact">Contact</a>
         <select id="language-switcher">
           <option value="fr">Français</option>
@@ -62,6 +64,49 @@
     </div>
   </section>
 
+  <section id="testimonials" class="section">
+    <div class="container">
+      <h2>Témoignages</h2>
+      <div class="testimonial">
+        <p>"Un service impeccable et une écoute attentive. Le Dr. Benameur est un professionnel exceptionnel qui met à l'aise dès la première consultation."</p>
+        <em>- Sarah, patiente</em>
+      </div>
+      <div class="testimonial">
+        <p>"Une expérience très positive. Les équipements sont modernes et le personnel très accueillant. Je recommande vivement."</p>
+        <em>- Ahmed, patient</em>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section gray">
+    <div class="container">
+      <h2>FAQ</h2>
+      <ul class="faq-list">
+        <li>
+          <strong>Quels types de radiologies proposez-vous ?</strong>
+          <p>Nous proposons la radiologie générale, l'échographie, le scanner, l'IRM, la mammographie et la densitométrie osseuse.</p>
+        </li>
+        <li>
+          <strong>Dois-je prendre rendez-vous ?</strong>
+          <p>Oui, nous vous conseillons de prendre un rendez-vous pour garantir une prise en charge rapide et efficace.</p>
+        </li>
+        <li>
+          <strong>Quels sont vos horaires d’ouverture ?</strong>
+          <p>Nous sommes ouverts du lundi au vendredi, de 8h à 18h.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="blog" class="section">
+    <div class="container">
+      <h2>Blog</h2>
+      <a href="#">L'importance de l'imagerie médicale dans le diagnostic précoce</a>
+      <a href="#">La radiologie, un domaine en constante évolution</a>
+      <a href="#">Conseils pour préparer une IRM</a>
+    </div>
+  </section>
+
   <section id="contact" class="section gray">
     <div class="container">
       <h2>Contactez-nous</h2>
@@ -93,8 +138,7 @@
       attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
     L.marker([35.6971, -0.6308]).addTo(map)
-      .bindPopup("Centre d'Imagerie Benameur")
-      .openPopup();
+      .bindPopup("Centre d'Imagerie Benameur");
   </script>
 </body>
 </html>
