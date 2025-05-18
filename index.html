@@ -1,77 +1,81 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centre d'Imagerie Benameur</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centre d'Imagerie Benameur</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico">
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </head>
+
 <body>
-    <!-- Header Section -->
-    <header>
-        <h1 id="title">Centre d'Imagerie Benameur</h1>
-        <p id="subtitle">Radiologie et imagerie médicale à Oran</p>
-        <select id="language-switcher">
-            <option value="fr">Français</option>
-            <option value="ar">عربي</option>
-        </select>
-    </header>
 
-    <!-- Navigation Menu -->
+  <!-- Menu en haut -->
+  <header>
+    <div id="title">
+      <h1 id="site-title">Centre d'Imagerie Benameur</h1>
+      <p id="subtitle">Radiologie et imagerie médicale à Oran</p>
+    </div>
     <nav>
-        <button id="menu-toggle" aria-label="Toggle menu">&#9776;</button>
-        <ul id="menu">
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#services">Nos services</a></li>
-            <li><a href="#doctor">Le Dr. Cherif Benameur</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+      <div id="language-switcher">
+        <select id="language-select">
+          <option value="fr">Français</option>
+          <option value="ar">عربى</option>
+        </select>
+      </div>
+      <div id="menu-toggle" aria-label="Menu">☰</div>
+      <ul id="menu">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#services">Nos services</a></li>
+        <li><a href="#doctor">Le Dr. Cherif Benameur</a></li>
+        <li><a href="#testimonials">Témoignages</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <!-- Main Content -->
-    <main>
-        <section id="about">
-            <h2>À propos du Centre</h2>
-            <p id="about-text"></p>
-        </section>
+  <!-- Menu fixe en bas -->
+  <div id="bottom-menu">
+    <ul>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#services">Nos services</a></li>
+      <li><a href="#doctor">Le Dr. Cherif Benameur</a></li>
+      <li><a href="#testimonials">Témoignages</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
 
-        <section id="services">
-            <h2 id="services-title"></h2>
-            <ul id="services-list"></ul>
-        </section>
+  <!-- Sections du site -->
+  <section id="about">
+    <!-- Contenu -->
+  </section>
 
-        <section id="doctor">
-            <h2 id="doctor-title"></h2>
-            <p id="doctor-text"></p>
-        </section>
+  <section id="services">
+    <!-- Contenu -->
+  </section>
 
-        <section id="contact">
-            <h2 id="contact-title"></h2>
-            <form id="contact-form">
-                <label for="name" id="name-label"></label>
-                <input type="text" id="name" name="name" required>
+  <section id="doctor">
+    <!-- Contenu -->
+  </section>
 
-                <label for="email" id="email-label"></label>
-                <input type="email" id="email" name="email" required>
+  <section id="testimonials">
+    <!-- Contenu -->
+  </section>
 
-                <label for="message" id="message-label"></label>
-                <textarea id="message" name="message" required></textarea>
+  <section id="contact">
+    <!-- Contenu -->
+  </section>
 
-                <button type="submit" id="submit-button"></button>
-            </form>
-            <div id="contact-info">
-                <p id="address"></p>
-                <p id="phone"></p>
-                <p id="email"></p>
-            </div>
-        </section>
-    </main>
+  <!-- Footer (avec copyright) -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Centre d'Imagerie Benameur - Tous droits réservés</p>
+    </div>
+  </footer>
 
-    <!-- Footer -->
-    <footer>
-        <p id="footer"></p>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
