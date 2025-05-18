@@ -1,81 +1,61 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Centre d'Imagerie Benameur</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="favicon.ico">
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </head>
-
 <body>
-
-  <!-- Menu en haut -->
   <header>
-    <div id="title">
-      <h1 id="site-title">Centre d'Imagerie Benameur</h1>
-      <p id="subtitle">Radiologie et imagerie médicale à Oran</p>
-    </div>
-    <nav>
-      <div id="language-switcher">
-        <select id="language-select">
-          <option value="fr">Français</option>
-          <option value="ar">عربى</option>
-        </select>
-      </div>
-      <div id="menu-toggle" aria-label="Menu">☰</div>
-      <ul id="menu">
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#services">Nos services</a></li>
-        <li><a href="#doctor">Le Dr. Cherif Benameur</a></li>
-        <li><a href="#testimonials">Témoignages</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <select id="language-switcher">
+      <option value="fr">Français</option>
+      <option value="ar">العربية</option>
+    </select>
+    <h1 id="title">Centre d'Imagerie Benameur</h1>
+    <p id="subtitle">Radiologie et imagerie médicale à Oran</p>
   </header>
 
-  <!-- Menu fixe en bas -->
-  <div id="bottom-menu">
-    <ul>
-      <li><a href="#about">À propos</a></li>
-      <li><a href="#services">Nos services</a></li>
-      <li><a href="#doctor">Le Dr. Cherif Benameur</a></li>
-      <li><a href="#testimonials">Témoignages</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-
-  <!-- Sections du site -->
-  <section id="about">
-    <!-- Contenu -->
-  </section>
+  <nav>
+    <a href="#services" id="nav-services">Services</a>
+    <a href="#team" id="nav-team">Équipe</a>
+    <a href="#contact" id="nav-contact">Contact</a>
+    <a href="#location" id="nav-location">Localisation</a>
+  </nav>
 
   <section id="services">
-    <!-- Contenu -->
+    <h2 id="services-title">Nos Services</h2>
+    <p>IRM, Scanner, échographie, radiologie conventionnelle et imagerie interventionnelle.</p>
   </section>
 
-  <section id="doctor">
-    <!-- Contenu -->
-  </section>
-
-  <section id="testimonials">
-    <!-- Contenu -->
+  <section id="team">
+    <h2 id="team-title">Notre Équipe</h2>
+    <p>Le Dr. Cherif Benameur et son équipe de radiologues spécialisés au service de votre santé.</p>
   </section>
 
   <section id="contact">
-    <!-- Contenu -->
+    <h2>Contact</h2>
+    <form id="contact-form">
+      <label for="name">Nom</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+      
+      <button type="submit">Envoyer</button>
+    </form>
   </section>
 
-  <!-- Footer (avec copyright) -->
+  <section id="location">
+    <h2>Localisation</h2>
+    <div id="map"></div>
+  </section>
+
   <footer>
-    <div class="container">
-      <p>&copy; 2025 Centre d'Imagerie Benameur - Tous droits réservés</p>
-    </div>
+    <p>© 2025 Centre d'Imagerie Benameur - Tous droits réservés</p>
   </footer>
 
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="script.js"></script>
 </body>
-
 </html>
